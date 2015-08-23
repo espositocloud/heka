@@ -2,7 +2,8 @@
   type = 'SandboxEncoder'
   filename = 'lua_encoders/schema_influx.lua'
   [InfluxSchema.config]
-    series = "heka.%{Logger}"
+    exclude_base_fields = true
+    series = "%{Type}"
 
 [InfluxOutput]
   type = 'HttpOutput'
