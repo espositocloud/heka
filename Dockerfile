@@ -6,5 +6,4 @@ RUN dpkg -i /tmp/heka.deb
 
 COPY conf /etc/hekad
 
-EXPOSE 4352
 CMD ["hekad", "--config", "/etc/hekad"]

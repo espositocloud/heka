@@ -14,12 +14,3 @@
   method = 'POST'
   username = 'root'
   password = 'root'
-
-[PayloadEncoder]
-
-[LogOutput]
-  encoder = 'PayloadEncoder'
-  message_matcher = 'Type == "nginx.access"'
-
-[DashboardOutput]
-  ticker_interval = 1
